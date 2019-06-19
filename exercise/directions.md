@@ -9,7 +9,14 @@ Paste your answers into this file.
 ## Print every number from 0 to 10
 
 ```
-ANSWER HERE
+
+var count = 0;
+while (count <=10){
+console.log(count);
+count = count +1;
+}
+
+
 ```
 
 <br>
@@ -17,7 +24,12 @@ ANSWER HERE
 ## Print every number from 10 to 0
 
 ```
-ANSWER HERE
+var count = 10;
+while (count >=0){
+console.log(count);
+count = count -1;
+}
+
 ```
 
 <br>
@@ -25,7 +37,12 @@ ANSWER HERE
 ## Print every number from 4 to -16
 
 ```
-ANSWER HERE
+var count = 4;
+while (count >=-15){
+console.log(count);
+count = count -1;
+}
+
 ```
 
 <br>
@@ -33,7 +50,12 @@ ANSWER HERE
 ## Print every fifth number from 8 to 41
 
 ```
-ANSWER HERE
+var count = 8;
+while (count <=48){
+console.log(count);
+count = count +5;
+}
+
 ```
 
 <br>
@@ -50,7 +72,20 @@ If the `number` is evenly divisible by 3 AND evenly divisible by 5, print "Fizzb
 
 
 ```
-ANSWER HERE
+var count = 0;
+while (count <=100){
+	if (count %3==0){
+		console.log("fizz")}
+		count = count +1;
+	if (count %5==0){
+		console.log("buzz")}
+		count = count +1;
+	if (count %3==0 && count %5==0){
+		console.log("fizzbuzz")}
+		count = count +1;
+	
+	}
+
 ```
 
 <br>
@@ -61,7 +96,16 @@ ANSWER HERE
 Write a for loop that will iterate from 0 to 20. For each iteration, it will check if the current number is even or odd, and report that to the screen (e.g. "2 is even").
 
 ```
-ANSWER HERE
+var count = 0;
+while (count <=20){
+	if (count %2===0){
+		console.log('even')}
+		count = count +1;
+	if (count %1===0){
+		console.log('odd')}
+		count = count +1;
+	
+	}
 ```
 
 <br>
@@ -74,7 +118,10 @@ Bonus: Use a nested for loop to show the tables for every multiplier from 1 to 1
 
 
 ```
-ANSWER HERE
+var count = 0;
+while (count <=10){
+	console.log(count * 2);
+	count = count +1;
 ```
 
 <br>
@@ -84,5 +131,27 @@ ANSWER HERE
 Check the results for every value from 60 to 100 - so your log should show "For 89, you got a B. For 90, you got an A.", etc.
 
 ```
-ANSWER HERE
+function assigngrade(counter) {
+  if (counter >=90) {
+    return "A"; 
+  } else if (counter >=80) {
+    return "B";
+  } else if (counter >=70) {
+    return "C";
+  } else if (counter >=60) {
+    return "D";
+  } else {
+    return "F";
+  }
+}
+
+for (i = 60; i <=100;i++) {
+  console.log("for" + i + ", you got a " + assingrade(i))
+}
+
+
+
+
+}
+
 ```
